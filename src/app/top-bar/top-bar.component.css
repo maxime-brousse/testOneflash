@@ -1,4 +1,8 @@
-
+.top-bar-button {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

@@ -6,6 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public color: any = '#1976d2';
+
+  public changeColor(colorChanged): void {
+    this.color = colorChanged;
+  }
+
+  ngOnInit() {
+  }
 }
 
 

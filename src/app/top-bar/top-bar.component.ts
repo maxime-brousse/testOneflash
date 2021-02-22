@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-top-bar',
@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
+  @Input() color;
+  @Input() changeColor: (args: any) => void;
 
+  ngOnInit() {
+  }
 }
 
 
