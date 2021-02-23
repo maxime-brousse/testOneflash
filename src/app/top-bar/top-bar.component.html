@@ -1,20 +1,22 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
-</a>
-
-<div class="top-bar-button">
-  <div ngbDropdown class="d-inline-block">
-    <button class="btn btn-outline-light" id="dropdownBasic1" ngbDropdownToggle>Choose color</button>
-    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-      <button ngbDropdownItem (click)="this.changeColor('#1976d2')">Blue</button>
-      <button ngbDropdownItem (click)="this.changeColor('Green')">green</button>
-      <button ngbDropdownItem (click)="this.changeColor('Red')">Red</button>
-    </div>
-  </div>
-  <a routerLink="/cart" class="button fancy-button" [ngStyle]="{'color' : color}">
-    <i class="material-icons" [ngStyle]="{'color' : color}">shopping_cart</i>
-    Checkout
+<div class="top-bar-div" [ngStyle]="{'background-color' : color}">
+  <a [routerLink]="['/']">
+    <h1>My Store</h1>
   </a>
+
+  <div class="top-bar-button">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-light" id="dropdownBasic1" ngbDropdownToggle>Choose color</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem (click)="this.changeColor('#1976d2')">Blue</button>
+        <button ngbDropdownItem (click)="this.changeColor('Green')">green</button>
+        <button ngbDropdownItem (click)="this.changeColor('Red')">Red</button>
+      </div>
+    </div>
+    <a routerLink="/cart" class="button fancy-button" [ngStyle]="{'color' : color}">
+      <i class="material-icons" [ngStyle]="{'color' : color}">shopping_cart</i>
+      Checkout
+    </a>
+  </div>
 </div>
 
 <!--
